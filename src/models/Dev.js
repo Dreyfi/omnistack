@@ -3,9 +3,10 @@ const PointSchema = require('./utils/PointSchema');
 
 const DevSchema = new mongoose.Schema({
     name: String,
+    login: String,
     github_username: String,
     bio: String,
-    avata_url: String,
+    avatar_url: String,
     techs: [String],
     location: {
         type: PointSchema,
